@@ -13,7 +13,7 @@ public class UtilDate {
       
  static String[] mois={"Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aôut","Septembre","Octobre","Novembre","Décembre"}; 
     
- public static String nomMois(int pNumMois){ return mois[pNumMois];}   
+ public static String nomMois(int pNumMois){ return mois[pNumMois-1];}   
    
  //<editor-fold defaultstate="collapsed" desc="Conversions Date  <--->  Chaine">
     

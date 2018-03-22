@@ -2,6 +2,7 @@ package data;
 import entites.Client;
 import entites.Facture;
 import entites.Region;
+import entites.Entreprise;
 import java.util.List;
 
 public class Dao {
@@ -58,3 +59,5 @@ public class Dao {
         
         return DonneesMem.getToutesLesFactures(); }   
 }
+
+   

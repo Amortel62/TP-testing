@@ -3,6 +3,7 @@ package tests;
 
 import data.Dao;
 import entites.Client;
+import entites.Entreprise;
 import entites.Region;
 import org.junit.Test;
 
@@ -48,6 +49,14 @@ public class TesterGC {
              Region r =dao.getRegionDeCode("HDF");
     
              assertEquals("Erreur Calcul CA",1952.73, r.caRegion(2017,12),0.001);
+        }
+         
+         @Test
+        public void testerCaentrepriseParAnneeEtMois() {
+    
+            
+    
+             assertEquals("Erreur Calcul CA",1952.73, Entreprise.caEntreprise(2017, 12),0.001);
         }
         
 

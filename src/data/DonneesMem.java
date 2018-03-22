@@ -2,6 +2,7 @@
 package data;
 
 import entites.Client;
+import entites.Entreprise;
 import entites.Facture;
 import entites.Region;
 import java.util.LinkedList;
@@ -10,10 +11,10 @@ import static utilitaires.UtilDate.chaineVersDate;
 
 public class DonneesMem {
      
-    static   private  List<Region>    toutesLesRegions  = new LinkedList<Region>(); 
-    static   private  List<Client>    tousLesClients    = new LinkedList<Client>();
-    static   private  List<Facture>   toutesLesFactures = new LinkedList<Facture>();
-
+    static   private  List<Region>     toutesLesRegions  = new LinkedList<Region>(); 
+    static   private  List<Client>     tousLesClients    = new LinkedList<Client>();
+    static   private  List<Facture>    toutesLesFactures = new LinkedList<Facture>();
+    static   private  List<Entreprise> toutesLesEntreprises = new LinkedList<Entreprise>();
     //<editor-fold defaultstate="collapsed" desc="CODE STATIQUE INITIALISANT LES DONNEES">
     
     static{
@@ -354,6 +355,10 @@ public class DonneesMem {
          ///////////////////////////////////////////////// 
     }
     
+        
+        
+        
+        
     //</editor-fold>
   
     //<editor-fold defaultstate="collapsed" desc="GETTERS">
@@ -369,6 +374,10 @@ public class DonneesMem {
     
     public static List<Facture> getToutesLesFactures() {
         return toutesLesFactures;
+    }
+    
+    public static List<Entreprise> getToutesLesEntreprises() {
+        return toutesLesEntreprises;
     }
     
     //</editor-fold>
