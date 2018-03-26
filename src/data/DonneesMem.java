@@ -27,6 +27,7 @@ public class DonneesMem {
         Region  r1=new Region();
         r1.setCodeRegion("HDF");
         r1.setNomRegion("Hauts de France");
+       
         
         toutesLesRegions.add(r1);
         
@@ -354,7 +355,9 @@ public class DonneesMem {
         
          ///////////////////////////////////////////////// 
     }
-    
+        
+        Entreprise e1 = new Entreprise();
+  
         
         
         
